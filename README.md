@@ -1,5 +1,7 @@
 # GetInstalledAddons (.NET tool)
 
+[![NuGet](https://img.shields.io/nuget/v/GetInstalledAddons.Tool.svg)](https://www.nuget.org/packages/GetInstalledAddons.Tool)
+
 **GetInstalledAddons** prints the registry entries that Alibre Design uses to register its add‑ons.
 
 | | |
