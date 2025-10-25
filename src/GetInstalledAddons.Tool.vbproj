@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<PublishTrimmed>false</PublishTrimmed>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>GetInstalledAddons</ToolCommandName>
+		<PackageId>GetInstalledAddons.Tool</PackageId>
+		<Version>1.0.1</Version>
+		<Authors>Stephen Mitchell</Authors>
+		<Company>Stephen Mitchell</Company>
+		<Product>GetInstalledAddons</Product>
+		<Description>GetInstalledAddons prints the registry entries that Alibre Design uses to register its add-ons.</Description>
+		<PackageTags>alibre-design;registry;dotnet-tool;addons;windows</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>Copyright (c) 2025 Stephen Mitchell</Copyright>
+		<RepositoryUrl>https://github.com/stephensmitchell/GetInstalledAddons.Tool</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/stephensmitchell/GetInstalledAddons.Tool</PackageProjectUrl>
+		<PublishSingleFile>false</PublishSingleFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>v1.0.1 - Fixed README to show correct command name (GetInstalledAddons). Added enhanced package metadata for better NuGet discoverability.</PackageReleaseNotes>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>GetInstalledAddons.Tool</Title>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="~README.md.saved.bak" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
